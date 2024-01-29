@@ -160,14 +160,19 @@ nav {
 }
 
 .grid1 {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
 
 .text-group {
     padding: 1rem;
     background-color: #176eb6;
     border-radius: 10px;
+    height: 3rem;
+    position: relative;
+    top: 5rem;
+    left: 10px;
 }
 
 .text-group p:nth-child(1) {
@@ -181,9 +186,13 @@ nav {
 }
 
 .new-section .grid1 img {
-    width: 150px;
+    width: 100%;
     height: 250px;
+    position: relative;
+    right: 25px;
 }
+
+
 
 .text-group p:nth-child(2) {
     color: #0c3d65;
@@ -198,6 +207,8 @@ nav {
 .textFort {
     font-size: 30px;
     color: #176eb6;
+    font-weight: bold;
+    margin: 0.5rem 0;
 }
 
 .group-element {
@@ -209,12 +220,21 @@ nav {
     display: flex;
 }
 
+.sous-group p {
+    padding-left: 10px;
+}
+
 .other-group {
     margin-bottom: 1rem;
 }
 
 .other-group ul li {
     display: flex;
+    margin-bottom: 10px;
+}
+
+.other-group p {
+    padding-left: 10px;
 }
 
 .new-section button {
