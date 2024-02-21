@@ -1,0 +1,67 @@
+
+
+Les types de données en JS: 
+-String (Tout ce qui peut être une chaîne de caractère) 'b', 'Je suis Doni'
+-Number (int / float) Int: 12, 5, 7, 99999.... Float : 2.4, 9.09865 
+-Arrays (Tableaux) string[] exemple: var string = ['czybukbuk', 'uiBSBXsq'] // number[] exemple var number = [2, 3, 99999]// any[] var any = [2, 'dzbczid']
+-objet !== Class var k = {
+    name: 'dknmnd',
+    age: 2,
+}
+-Null Ne contient aucune données
+-Undefined 
+
+Les types de variables en JS et leurs portées
+let nomDeVariable
+var nomDeVariable
+const nomDeVariable : Ceci est une constante
+
+if...
+var l = 'bxclaa'
+var t = []
+t.forEach(...)
+else..
+nomDeVariable = 
+l = 2
+console.log(l) = 2
+
+
+
+
+baabla() {
+    var l = 2
+}
+
+
+fl () {
+    var l = []
+}
+
+Les Fonctions en JS
+
+
+function nomDeLaFonction(param1, param2) {
+    console.log(param1)
+    if...
+    var l = 'bxclaa'
+    var t = []
+    t.forEach(...)
+    else..
+    nomDeVariable = 
+    l = 2
+    console.log(l) = 2
+}
+
+
+const/var/let nomDeLaFonction2 = (param1, param2) => {
+    
+}
+nomDeLaFonction(2, 'Hello World')
+nomDeLaFonction2('alkkx', 2)
+
+Implémenter du JS dans une page Web
+-Rajouter de la logique sur certains composants
+-Rendre la page plus intelligente avec un système d'évènement
+
+
+DOM (Document Object Model)

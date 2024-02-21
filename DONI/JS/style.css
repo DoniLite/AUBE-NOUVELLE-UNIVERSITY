@@ -1,0 +1,309 @@
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+li{
+    color: #ffffff;
+    justify-content: center;
+}
+
+li a{
+    color: #ffffff;
+}
+
+.fond2{
+    width: 100%;
+    height: 100%;
+    background: #041624;
+}
+
+.fond{
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.parent1{
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent2{
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex p{
+    font-size: 12px;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    background-image: url('./livreur1.jpg');
+    background-position: 65%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+
+}
+
+
+.child:nth-child(1){
+    width: 50%;
+    padding: 1rem;
+}
+
+.text5{
+    font-weight: bold;
+    font-size: 10px;
+    color: #82bfec;
+    margin: 5%;
+}
+
+.text10{
+    font-weight: bold;
+    font-size: 20px;
+    color: #82bfec;
+}
+
+.text20{
+    font-weight: bold;
+    font-size: 60px;
+    color: #093c64;
+}
+.text15{
+    font-weight: bold;
+    font-size: 70px;
+    color: #82bfec;
+    border-right: solid 2px;
+}
+
+.container .child button{
+    width:70% ;
+    margin: 0 auto;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: #0c3d65 ;
+    border: none;
+    color: antiquewhite;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.container .child button:hover{
+    background-color: cadetblue;
+    color: black;
+}
+
+.container2{
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+}
+
+.container-grid{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.grid{
+    display: flex;
+    padding: 1rem;
+}
+
+.grid p{
+    margin-left: 5px;
+}
+
+.new-section {
+    margin: 2rem 0;
+}
+
+.grid1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-group {
+    padding: 1rem;
+    background-color: #176eb6;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.text-group p:nth-child(1) {
+    color: #f1f1f1;
+}
+
+.new-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.new-section .grid1 img {
+    position: left;
+}
+
+.text-group p:nth-child(2) {
+    color: #0c3d65;
+}
+
+
+.grid2 p:nth-child(1) {
+    font-size: 20px;
+    color: #ba6767;
+}
+
+.textFort {
+    font-size: 30px;
+    color: #176eb6;
+    margin: 1rem;
+}
+
+.group-element {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 20px;
+}
+
+.sous-group {
+    display: flex;
+}
+
+.other-group {
+    margin-bottom: 1rem;
+}
+
+.other-group ul li {
+    display: flex;
+    color: #041624;
+    
+}
+
+.new-section button {
+    padding: 10px;
+    width: 70%;
+    color: #dfdfdf;
+    font-weight: bold;
+    border: none;
+    background-color: #176eb6;
+    border-radius: 5px;
+}
+
+.groupe {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px 50px 20px;
+}
+
+.sous-groupe{
+    display: flex;
+}
+
+.sgrid{
+    display: flex;
+    padding: 2rem;
+}
+
+.sgrid1{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.text6{
+    font-size: 10px;
+    color: black;
+    margin: 5%;
+}
+
+.nw1{
+    width: 100;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    padding: 2rem;
+}
+
+.text1{
+    font-weight: bold;
+    font-size: 30px;
+    color: #093c64;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.text2{
+    font-weight: bold;
+    font-size: 15px;
+    color: #82bfec;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.SG{
+    align-items: center;
+    text-align: center;
+}
+.SG1{
+    padding: 1rem;
+}
+
+.SG1 button{
+    width:70% ;
+    margin: 0 auto;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: #0c3d65 ;
+    border: none;
+    color: antiquewhite;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+.SG1 button:hover{
+    background-color: cadetblue;
+    color: black;
+}
+
+.nw{
+    text-align: center;
+}
+
+
+@media (max-width: 1002px) {
+    .parent1, .parent2 {
+        width: 90%;
+    }
+}
+
+
