@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #d47a7a;
+    }
+    #div_container{
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(239, 232, 232, 0.1);
+    }
+    #todo-list {
+      list-style: none;
+      padding: 0;
+    }
+    .list_element{
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      background-color: #e1e1e1;
+    }
+    .todo-item input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    .todo-item.completed {
+      background-color: #c1e5c1;
+    }
+    .list_element button {
+      margin-left: auto;
+      cursor: pointer;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+<p style="text-align: center;">Creation de tache</p>
+<div id="div_container">
+  <p>Liste des taches</p>
+  <ul id="todo-list"></ul>
+  <input type="text" id="nouveau" placeholder="ajouter une tache">
+  <button onclick="ajouter()">Ajouter</button>
+</div>
+
+<script>
+  function ajouter() {
+    const TacheInput = document.getElementById('nouveau');
+    const monText = TaskInput.value.trim();
+
+    if (monText !== '') {
+      const listItem = document.createElement('li');
+      listItem.className = 'list_element';
+
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.onchange = function () {
+        TacheEffectue(listItem, checkbox);
+      };
+
+      const tacheSpan = document.createElement('span');
+      taskSpan.textContent = monText;
+
+      const removeButton = document.createElement('button');
+      removeButton.textContent = 'Retirer';
+      removeButton.onclick = function () {
+        Retirer(listItem);
+      };
+
+      listItem.appendChild(checkbox);
+      listItem.appendChild(taskSpan);
+      listItem.appendChild(removeButton);
+
+      document.getElementById('todo-list').appendChild(listItem);
+
+      TaskInput.value = '';
+    }
+  }
+
+  function TacheEffectue(listItem, checkbox) {
+    listItem.classList.toggle('completee', checkbox.checked);
+    const tacheSpan = listItem.querySelector('span');
+    tacheSpan.textContent = checkbox.checked ? ' [Tache effectue] ' + tacheSpan.textContent : tacheSpan.textContent.replace(' [Tache effectue] ', '');
+  }
+
+  function Retirer(listItem) {
+    listItem.remove();
+  }
+</script>
+
+</body>
+</html>
