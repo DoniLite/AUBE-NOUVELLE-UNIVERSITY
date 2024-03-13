@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="body">
+        <h1>TODO APP</h1>
+        <input type="text" id="taskInput" placeholder="Nouvelle tâche...">
+        <button onclick="addTask()" id="addBtn">Ajouter</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script>
+            
+    let tasks = [];
+
+    
+    function addTask() {
+        const taskInput = document.getElementById("taskInput");
+        const taskText = taskInput.value.trim();
+        if (taskText !== "") {
+            tasks.push(taskText);
+            taskInput.value = "";
+            displayTasks();
+        }
+    }
+
+    
+    function displayTasks() {
+        const taskList = document.getElementById("taskList");
+        taskList.innerHTML = "";
+        tasks.forEach((task, index) => {
+            const li = document.createElement("li");
+            li.textContent = task;
+            li.onclick = () => toggleTask(index);
+            taskList.appendChild(li);
+        });
+    }
+
+    
+    function toggleTask(index) {
+        tasks[index] = tasks[index].startsWith("✅ ") ? tasks[index].slice(2) : "✅ " + tasks[index];
+        displayTasks();
+    }
+
+    function removeTask(index) {
+        tasks.splice(index, 1);
+        displayTasks();
+    }
+
+    
+    displayTasks();
+    </script>
+</body>
+</html>
