@@ -1,0 +1,27 @@
+
+
+
+les types de donnees en js:
+-String (Tut ce qui peut etre chaine de caractere)
+-Number(int, float)
+-Arrays exemple: var string = ['hahahah'] // var nombre= [2,4,68] // 
+-objet !== Class var k = {
+    name: 'djuk'
+    age: 2,
+}
+
+les types de variables en js et leur portées:
+let nomDeVariable
+var nomDeVariable
+const nomDeVariable
+
+les fonctions en javascript
+function nomDeLaFonction(param1, param2) {
+    console.log(param1)
+}
+
+nomDeLaFonction{2, 'Hello world'}
+
+implementer du js dans une page web
+-Ajouter de la logique sur certains composants
+-Rendre la page plus intelligente avec un systeme d'evenements
